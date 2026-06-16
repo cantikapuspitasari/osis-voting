@@ -1,14 +1,11 @@
-import { type NextRequest } from "next/server";
-import { updateSession } from "@/utils/supabase/proxy";
+import { type NextRequest, NextResponse } from "next/server";
 
-export async function middleware(request: NextRequest) {
-  // Melewati request ke fungsi updateSession yang telah kita buat
-  return await updateSession(request);
+export function middleware(request: NextRequest) {
+  return NextResponse.next();
 }
 
-// Konfigurasi agar Middleware hanya memantau rute tertentu (menghemat performa)
 export const config = {
   matcher: [
-    "/((?!_next/static|_next/image|favicon.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp)$).*)",
+    "/((?!_next/static|_next/image|favicon.ico).*)",
   ],
 };
