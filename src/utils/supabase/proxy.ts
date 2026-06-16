@@ -16,15 +16,19 @@ export async function updateSession(request: NextRequest) {
         getAll() {
           return request.cookies.getAll();
         },
-        setAll(cookiesToSet) {
-          cookiesToSet.forEach(({ name, value }) =>
-            request.cookies.set(name, value),
+        setAll(cookiesToSet: any) {
+          // 1. Update cookies di sisi Request (Sesuai spek Supabase SSR terbaru)
+          cookiesToSet.forEach(({ name, value, options }: any) =>
+            request.cookies.set(name, value)
           );
+          
           supabaseResponse = NextResponse.next({
             request,
           });
-          cookiesToSet.forEach(({ name, value, options }) =>
-            supabaseResponse.cookies.set(name, value, options),
+          
+          // 2. Update cookies di sisi Response agar tertulis di browser user
+          cookiesToSet.forEach(({ name, value, options }: any) =>
+            supabaseResponse.cookies.set(name, value, options)
           );
         },
       },
