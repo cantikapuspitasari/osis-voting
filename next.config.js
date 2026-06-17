@@ -6,14 +6,16 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'lh3.googleusercontent.com',
       },
+      {
+        protocol: 'https',
+        hostname: 'ui-avatars.com',
+      },
     ],
   },
   typescript: {
-    // Memaksa Vercel meloloskan build meskipun ada error type di server
     ignoreBuildErrors: true,
   },
   eslint: {
-    // Mengabaikan eslint error saat build di server agar tidak macet
     ignoreDuringBuilds: true,
   },
 };
