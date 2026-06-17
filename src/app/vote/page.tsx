@@ -23,17 +23,18 @@ interface Candidate {
   missions: string[];
 }
 
+// UPDATE: Bagian image sekarang mengarah ke folder public/images/
 const candidates: Candidate[] = [
   {
     id: "c1",
     orderNumber: "01",
     chairman: {
       name: "Budi Santoso",
-      image: "https://randomuser.me/api/portraits/men/75.jpg",
+      image: "/images/paslon1-ketua.jpg", // Ganti dengan file AI Ketua 1
     },
     viceChairman: {
       name: "Siti Aminah",
-      image: "https://randomuser.me/api/portraits/women/65.jpg",
+      image: "/images/paslon1-wakil.jpg", // Ganti dengan file AI Wakil 1
     },
     vision:
       "Mewujudkan OSIS yang inovatif, inklusif, dan menjadi wadah aspirasi siswa yang progresif berbasis teknologi.",
@@ -48,11 +49,11 @@ const candidates: Candidate[] = [
     orderNumber: "02",
     chairman: {
       name: "Agus Wijaya",
-      image: "https://randomuser.me/api/portraits/men/32.jpg",
+      image: "/images/paslon2-ketua.jpg", // Ganti dengan file AI Ketua 2
     },
     viceChairman: {
       name: "Dian Kusuma",
-      image: "https://randomuser.me/api/portraits/women/44.jpg",
+      image: "/images/paslon2-wakil.jpg", // Ganti dengan file AI Wakil 2
     },
     vision:
       "Menjadikan OSIS sebagai mitra strategis sekolah dalam mencetak lulusan berkarakter dan siap kerja.",
@@ -66,11 +67,11 @@ const candidates: Candidate[] = [
     orderNumber: "03",
     chairman: {
       name: "Rendi Pratama",
-      image: "https://randomuser.me/api/portraits/men/23.jpg",
+      image: "/images/paslon3-ketua.jpg", // Ganti dengan file AI Ketua 3
     },
     viceChairman: {
       name: "Siti Nurhaliza",
-      image: "https://randomuser.me/api/portraits/women/26.jpg",
+      image: "/images/paslon3-wakil.jpg", // Ganti dengan file AI Wakil 3
     },
     vision: "OSIS yang kreatif, tangkas, dan berprestasi di tingkat nasional.",
     missions: [
@@ -132,6 +133,7 @@ export default function VotePage() {
               </div>
               <div className="flex gap-4 z-10">
                 <div className="flex-1 aspect-square rounded-xl overflow-hidden border border-slate-200 bg-slate-100 relative group">
+                  {/* Catatan: Karena menggunakan gambar lokal, unoptimized bisa tetap dipakai atau dihapus tergantung konfigurasi vercel */}
                   <Image src={paslon.chairman.image} alt={`Calon Ketua ${paslon.orderNumber}`} fill unoptimized priority={index === 0} className="object-cover group-hover:scale-105 transition-transform duration-500" />
                   <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-slate-900/80 to-transparent p-3 pt-8">
                     <span className="text-white text-xs font-medium">Ketua</span>
