@@ -6,18 +6,10 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'lh3.googleusercontent.com',
       },
-      {
-        protocol: 'https',
-        hostname: 'ui-avatars.com',
-      },
-      {
-        protocol: 'https',
-        hostname: 'randomuser.me',
-      },
     ],
   },
   typescript: {
-    ignoreBuildErrors: true,
+    ignoreBuildErrors: true, // Tetap abaikan error type agar lancar di Vercel
   },
   eslint: {
     ignoreDuringBuilds: true,
