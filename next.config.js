@@ -9,9 +9,11 @@ const nextConfig = {
     ],
   },
   typescript: {
-    ignoreBuildErrors: true, // Tetap abaikan error type agar lancar di Vercel
+    // Memaksa Vercel meloloskan build meskipun ada error type di server
+    ignoreBuildErrors: true,
   },
   eslint: {
+    // Mengabaikan eslint error saat build di server agar tidak macet
     ignoreDuringBuilds: true,
   },
 };
