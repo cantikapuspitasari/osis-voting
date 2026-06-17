@@ -29,13 +29,14 @@ const candidates: Candidate[] = [
     orderNumber: "01",
     chairman: {
       name: "Budi Santoso",
-      image: "https://ui-avatars.com/api/?name=Budi+Santoso&size=400&background=dbeafe&color=1d4ed8&bold=true",
+      image: "https://randomuser.me/api/portraits/men/75.jpg",
     },
     viceChairman: {
       name: "Siti Aminah",
-      image: "https://ui-avatars.com/api/?name=Siti+Aminah&size=400&background=dbeafe&color=1d4ed8&bold=true",
+      image: "https://randomuser.me/api/portraits/women/65.jpg",
     },
-    vision: "Mewujudkan OSIS yang inovatif, inklusif, dan menjadi wadah aspirasi siswa yang progresif berbasis teknologi.",
+    vision:
+      "Mewujudkan OSIS yang inovatif, inklusif, dan menjadi wadah aspirasi siswa yang progresif berbasis teknologi.",
     missions: [
       "Mengoptimalkan penggunaan teknologi digital dalam kegiatan kesiswaan.",
       "Menyelenggarakan kegiatan Teaching Factory antar jurusan yang kolaboratif.",
@@ -47,13 +48,14 @@ const candidates: Candidate[] = [
     orderNumber: "02",
     chairman: {
       name: "Agus Wijaya",
-      image: "https://ui-avatars.com/api/?name=Agus+Wijaya&size=400&background=dbeafe&color=1d4ed8&bold=true",
+      image: "https://randomuser.me/api/portraits/men/32.jpg",
     },
     viceChairman: {
       name: "Dian Kusuma",
-      image: "https://ui-avatars.com/api/?name=Dian+Kusuma&size=400&background=dbeafe&color=1d4ed8&bold=true",
+      image: "https://randomuser.me/api/portraits/women/44.jpg",
     },
-    vision: "Menjadikan OSIS sebagai mitra strategis sekolah dalam mencetak lulusan berkarakter dan siap kerja.",
+    vision:
+      "Menjadikan OSIS sebagai mitra strategis sekolah dalam mencetak lulusan berkarakter dan siap kerja.",
     missions: [
       "Meningkatkan kedisiplinan",
       "Mengaktifkan kembali mading digital",
@@ -64,11 +66,11 @@ const candidates: Candidate[] = [
     orderNumber: "03",
     chairman: {
       name: "Rendi Pratama",
-      image: "https://ui-avatars.com/api/?name=Rendi+Pratama&size=400&background=dbeafe&color=1d4ed8&bold=true",
+      image: "https://randomuser.me/api/portraits/men/23.jpg",
     },
     viceChairman: {
       name: "Siti Nurhaliza",
-      image: "https://ui-avatars.com/api/?name=Siti+Nurhaliza&size=400&background=dbeafe&color=1d4ed8&bold=true",
+      image: "https://randomuser.me/api/portraits/women/26.jpg",
     },
     vision: "OSIS yang kreatif, tangkas, dan berprestasi di tingkat nasional.",
     missions: [
