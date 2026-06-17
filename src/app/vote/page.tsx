@@ -29,11 +29,11 @@ const candidates: Candidate[] = [
     orderNumber: "01",
     chairman: {
       name: "Budi Santoso",
-      image: "https://xsgames.co/randomusers/assets/avatars/male/1.jpg",
+      image: "https://drive.google.com/uc?export=view&id=1Fp3A8bTkNYdq7sf2CE5LaKcqfwIeKjir",
     },
     viceChairman: {
       name: "Siti Aminah",
-      image: "https://xsgames.co/randomusers/assets/avatars/female/1.jpg",
+      image: "https://drive.google.com/uc?export=view&id=1u1te26nxkf0qEd5pEGK5y1wWRbhbw_Cu",
     },
     vision: "Mewujudkan OSIS yang inovatif, inklusif, dan menjadi wadah aspirasi siswa yang progresif berbasis teknologi.",
     missions: [
@@ -47,11 +47,11 @@ const candidates: Candidate[] = [
     orderNumber: "02",
     chairman: {
       name: "Agus Wijaya",
-      image: "https://xsgames.co/randomusers/assets/avatars/male/2.jpg",
+      image: "https://drive.google.com/uc?export=view&id=1Ghmsmccl2-E5VcuSLQ8_so_S0PQLh4sQ",
     },
     viceChairman: {
       name: "Dian Kusuma",
-      image: "https://xsgames.co/randomusers/assets/avatars/female/2.jpg",
+      image: "https://drive.google.com/uc?export=view&id=1Rx8aiJGRf_LLiSI1_xx1tGauK8KA1cyK",
     },
     vision: "Menjadikan OSIS sebagai mitra strategis sekolah dalam mencetak lulusan berkarakter dan siap kerja.",
     missions: [
@@ -64,11 +64,11 @@ const candidates: Candidate[] = [
     orderNumber: "03",
     chairman: {
       name: "Rendi Pratama",
-      image: "https://xsgames.co/randomusers/assets/avatars/male/3.jpg",
+      image: "https://drive.google.com/uc?export=view&id=1lX0q_eUKVhKVE1aYMdigYF57MWknzSV8",
     },
     viceChairman: {
       name: "Siti Nurhaliza",
-      image: "https://xsgames.co/randomusers/assets/avatars/female/3.jpg",
+      image: "https://drive.google.com/uc?export=view&id=1CmegaaTjHCPKo718_CmDRA6zDrPpKKyn",
     },
     vision: "OSIS yang kreatif, tangkas, dan berprestasi di tingkat nasional.",
     missions: [

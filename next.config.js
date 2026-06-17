@@ -16,7 +16,7 @@ const nextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 'xsgames.co',
+        hostname: 'drive.google.com',
       },
     ],
   },
