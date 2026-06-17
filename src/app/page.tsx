@@ -34,7 +34,7 @@ export default function LoginPage() {
 
   return (
     <main className="bg-slate-50 min-h-screen w-full flex items-center justify-center p-4 relative overflow-hidden">
-      <div className="absolute inset-0 pointer-events-none overflow-hidden z-0 flex items-center justify-center">
+      <div className="absolute inset-0 pointer-events-none overflow-hidden z-0">
         <div className="absolute w-[500px] h-[500px] bg-blue-600/5 rounded-full blur-3xl top-[-100px] -left-[100px]"></div>
         <div className="absolute w-[400px] h-[400px] bg-blue-600/10 rounded-full blur-3xl bottom-[50px] -right-[50px]"></div>
       </div>
@@ -42,7 +42,7 @@ export default function LoginPage() {
       <div className="w-full max-w-md mx-auto z-10">
         <div className="bg-white/70 backdrop-blur-lg border border-white/40 rounded-xl p-8 shadow-sm flex flex-col items-center">
           <div className="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mb-6 shadow-sm">
-            <GraduationCap className="text-blue-600 w-8 h-8" strokeWidth={1.5} aria-hidden="true" />
+            <GraduationCap className="text-blue-600 w-8 h-8" strokeWidth={1.5} />
           </div>
 
           <h1 className="text-2xl font-bold text-slate-900 mb-2 text-center tracking-tight">
@@ -53,29 +53,26 @@ export default function LoginPage() {
             Masukkan 6 digit kode OTP yang telah diberikan oleh panitia pemilihan.
           </p>
 
-          <form id="login-form" onSubmit={handleLogin} className="w-full flex flex-col items-center gap-6">
-            <div className="flex justify-center w-full">
-              <div className="flex items-center gap-2">
-                <div className="flex gap-2">
-                  {[0, 1, 2].map((i) => (
-                    <div key={i} className="w-12 h-14 text-xl font-semibold bg-white border border-slate-200 rounded-xl flex items-center justify-center text-slate-900 shadow-sm">
-                      {pin[i] ? "•" : ""}
-                    </div>
-                  ))}
-                </div>
-                <span className="text-slate-400 font-bold mx-1">—</span>
-                <div className="flex gap-2">
-                  {[3, 4, 5].map((i) => (
-                    <div key={i} className="w-12 h-14 text-xl font-semibold bg-white border border-slate-200 rounded-xl flex items-center justify-center text-slate-900 shadow-sm">
-                      {pin[i] ? "•" : ""}
-                    </div>
-                  ))}
-                </div>
+          <form onSubmit={handleLogin} className="w-full flex flex-col items-center gap-6">
+            <div className="flex items-center gap-2">
+              <div className="flex gap-2">
+                {[0, 1, 2].map((i) => (
+                  <div key={i} className="w-12 h-14 text-xl font-semibold bg-white border border-slate-200 rounded-xl flex items-center justify-center text-slate-900 shadow-sm">
+                    {pin[i] ? "•" : ""}
+                  </div>
+                ))}
+              </div>
+              <span className="text-slate-400 font-bold mx-1">—</span>
+              <div className="flex gap-2">
+                {[3, 4, 5].map((i) => (
+                  <div key={i} className="w-12 h-14 text-xl font-semibold bg-white border border-slate-200 rounded-xl flex items-center justify-center text-slate-900 shadow-sm">
+                    {pin[i] ? "•" : ""}
+                  </div>
+                ))}
               </div>
             </div>
 
             <input
-              id="otp-input"
               type="text"
               inputMode="numeric"
               pattern="[0-9]*"
@@ -110,7 +107,7 @@ export default function LoginPage() {
             </button>
           </form>
 
-          <div className="mt-8 flex items-center justify-center gap-2 text-center w-full">
+          <div className="mt-8 flex items-center justify-center gap-2">
             <CircleHelp className="text-slate-500 w-4 h-4" />
             <span className="text-xs font-medium text-slate-500">Butuh bantuan? Hubungi panitia.</span>
           </div>
